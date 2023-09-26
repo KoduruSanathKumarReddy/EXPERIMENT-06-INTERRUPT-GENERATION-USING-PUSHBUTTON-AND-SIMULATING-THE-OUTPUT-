@@ -89,14 +89,72 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
   
 
 ## STM 32 CUBE PROGRAM :
+~~~
+Developed by: Koduru Sanath Kumar Reddy
+Register no: 212221240024
+~~~
+~~~
+#include "main.h"
+#include "stdbool.h"
+
+int main(void)
+{
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  /* USER CODE BEGIN 2 */
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+	if((GPIO_Pin == GPIO_PIN_0)){
+		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
+	}
+}
+~~~
 
 
 
 ## Output screen shots of proteus  :
+<img width="1024" alt="Screenshot 2023-09-26 at 9 40 08 AM" src="https://github.com/KoduruSanathKumarReddy/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/69503902/30a3735a-f91e-4d3f-89c4-6422fe5364ee">
+<img width="1024" alt="Screenshot 2023-09-26 at 9 40 14 AM" src="https://github.com/KoduruSanathKumarReddy/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/69503902/ef4c3b95-d9a6-4756-be6a-581eb403a4ec">
+
+
  
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+ <img width="964" alt="Screenshot 2023-09-26 at 9 38 17 AM" src="https://github.com/KoduruSanathKumarReddy/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/69503902/f569e10a-7313-4046-8f1f-64aa6d0e72e1">
+
  
 ## Result :
 Interfacing a push button and interrupt genrateion is simulated using proteus 
