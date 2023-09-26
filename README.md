@@ -146,7 +146,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 
 
 ## Output screen shots of proteus  :
+### State 1:
 <img width="1024" alt="Screenshot 2023-09-26 at 9 40 08 AM" src="https://github.com/KoduruSanathKumarReddy/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/69503902/30a3735a-f91e-4d3f-89c4-6422fe5364ee">
+
+### State 2:
 <img width="1024" alt="Screenshot 2023-09-26 at 9 40 14 AM" src="https://github.com/KoduruSanathKumarReddy/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/69503902/ef4c3b95-d9a6-4756-be6a-581eb403a4ec">
 
 
